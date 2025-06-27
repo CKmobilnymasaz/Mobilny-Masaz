@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Paweł Klusek – Mobilny Masaż</title>
-  <!-- Google Fonts: Roboto -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
   <style>
     body {
@@ -13,11 +12,19 @@
       background-color: #f5f9f7;
       color: #333;
       line-height: 1.6;
+      animation: fadeIn 1s ease forwards;
+      opacity: 0;
+    }
+    @keyframes fadeIn {
+      to { opacity: 1; }
     }
     header {
       background-color: #d0ece7;
       padding: 3rem 2rem 2rem 2rem;
       text-align: center;
+      animation: fadeIn 1.2s ease forwards;
+      opacity: 0;
+      animation-delay: 0.2s;
     }
     header h1 {
       margin: 0;
@@ -42,6 +49,9 @@
       padding: 3rem 1.5rem;
       max-width: 900px;
       margin: auto;
+      animation: fadeIn 1.3s ease forwards;
+      opacity: 0;
+      animation-delay: 0.4s;
     }
     h2 {
       color: #00796b;
@@ -58,12 +68,19 @@
       align-items: center;
       justify-content: center;
       gap: 2rem;
+      animation: fadeIn 1.4s ease forwards;
+      opacity: 0;
+      animation-delay: 0.6s;
     }
     .about-content img {
       width: 240px;
       height: auto;
       border-radius: 15px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .about-content img:hover {
+      transform: scale(1.05);
     }
     .about-content .text {
       max-width: 500px;
@@ -80,6 +97,9 @@
     .offer li {
       margin-bottom: 1.2rem;
       line-height: 1.5;
+      animation: fadeIn 1.5s ease forwards;
+      opacity: 0;
+      animation-delay: 0.8s;
     }
     .offer li strong {
       font-weight: 700;
@@ -94,12 +114,18 @@
       height: 320px;
       border-radius: 12px;
       box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      animation: fadeIn 1.6s ease forwards;
+      opacity: 0;
+      animation-delay: 1s;
     }
     form {
       display: flex;
       flex-direction: column;
       max-width: 500px;
       margin: 1rem auto 0 auto;
+      animation: fadeIn 1.7s ease forwards;
+      opacity: 0;
+      animation-delay: 1.2s;
     }
     input, textarea {
       margin-bottom: 1rem;
@@ -122,10 +148,11 @@
       cursor: pointer;
       font-size: 1.15rem;
       font-weight: 700;
-      transition: background-color 0.3s ease;
+      transition: background-color 0.3s ease, transform 0.3s ease;
     }
     button:hover {
       background-color: #388e3c;
+      transform: scale(1.05);
     }
     .therapy-images {
       display: flex;
@@ -133,6 +160,9 @@
       margin-top: 2.5rem;
       gap: 1.5rem;
       flex-wrap: wrap;
+      animation: fadeIn 1.8s ease forwards;
+      opacity: 0;
+      animation-delay: 1.4s;
     }
     .therapy-images img {
       width: 300px;
@@ -150,6 +180,9 @@
       font-size: 0.95rem;
       color: #555;
       margin-top: 3rem;
+      animation: fadeIn 1.9s ease forwards;
+      opacity: 0;
+      animation-delay: 1.6s;
     }
 
     /* RESPONSYWNOŚĆ */
@@ -228,4 +261,39 @@
     <p>Pakiety są doskonałym wyborem dla osób, które chcą zadbać o regularny relaks i zdrowie. Terminy ustalamy indywidualnie.</p>
     <iframe
       class="map-embed"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24433.383672498163!2d20.6173852!3d50.8660778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47182779a8e1b4a7%3A0xb064dfc0f28fcf2b!2sKielce!5e0!3m2!1spl!2spl!4v171
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24433.383672498163!2d20.6173852!3d50.8660778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47182779a8e1b4a7%3A0xb064dfc0f28fcf2b!2sKielce!5e0!3m2!1spl!2spl!4v1719480000000!5m2!1spl!2spl"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </section>
+
+  <section class="how">
+    <h2>Masaż i terapia ruchem</h2>
+    <p style="text-align:center; max-width: 700px; margin: auto;">
+      Oferuję terapię kontuzji, leczenie przewlekłego napięcia mięśniowego oraz wspomaganie ruchem i prostymi ćwiczeniami, które pomagają wrócić do sprawności i zdrowia. Łączę masaż z podejściem funkcjonalnym.
+    </p>
+    <div class="therapy-images">
+      <img src="grafika1.png" alt="Ilustracja masażu" />
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Kontakt</h2>
+    <p style="text-align:center;">
+      📞 Telefon: <a href="tel:535273830"><strong>535-273-830</strong></a><br />
+      ✉️ E-mail: <a href="mailto:ckmobilnymasaz@gmail.com"><strong>ckmobilnymasaz@gmail.com</strong></a>
+    </p>
+    <form>
+      <input type="text" placeholder="Twoje imię" required />
+      <input type="email" placeholder="Twój e-mail" required />
+      <textarea placeholder="Wiadomość..." rows="4" required></textarea>
+      <button type="submit">Wyślij wiadomość</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Paweł Klusek – Mobilny Masaż. Wszelkie prawa zastrzeżone.
+  </footer>
+</body>
+</html>
