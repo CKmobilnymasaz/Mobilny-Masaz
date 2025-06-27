@@ -38,6 +38,8 @@
     h2 {
       color: #00796b;
       text-align: center;
+      margin-top: 1rem; /* mniejszy odstęp nad nagłówkiem */
+      margin-bottom: 1rem;
     }
     .about-content {
       display: flex;
@@ -52,11 +54,13 @@
     }
     .about-content .text {
       max-width: 500px;
-      font-size: 1.1rem;
+      font-size: 1.15rem;
+      line-height: 1.6;
+      text-align: justify;
+      margin: auto;
     }
     .about-content .signature {
-      font-weight: bold;
-      margin-top: 1rem;
+      display: none; /* ukrywam podpis */
     }
     .offer ul {
       list-style: none;
@@ -121,8 +125,9 @@
     <div class="about-content">
       <img src="z.png" alt="Paweł Klusek – Technik masażysta" />
       <div class="text">
-        <p>Nazywam się Paweł Klusek i jestem technikiem masażystą. Oferuję mobilne masaże wykonywane z pełnym zaangażowaniem i troską o Twoje zdrowie. Przyjeżdżam z profesjonalnym stołem i tworzę komfortowe warunki do relaksu i regeneracji w Twoim domu.</p>
-        <p class="signature">Paweł Klusek, Technik Masażysta</p>
+        <p>
+          Nazywam się Paweł Klusek i jestem technikiem masażystą. Oferuję mobilne masaże wykonywane z pełnym zaangażowaniem i troską o Twoje zdrowie. Przyjeżdżam z profesjonalnym stołem i tworzę komfortowe warunki do relaksu i regeneracji w Twoim domu.
+        </p>
       </div>
     </div>
   </section>
