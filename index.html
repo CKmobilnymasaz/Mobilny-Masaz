@@ -110,4 +110,126 @@
     .offer-right p:first-child {
       font-weight: bold;
       font-size: 1.2rem;
-      margin-bo
+      margin-bottom: 0.7rem;
+    }
+    .map-embed {
+      margin-top: 2rem;
+      border: none;
+      width: 100%;
+      height: 300px;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    }
+    .therapy-images {
+      display: flex;
+      justify-content: center;
+      margin-top: 1.5rem;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .therapy-images img {
+      width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .therapy-images img:hover {
+      transform: scale(1.04);
+    }
+    .contact p {
+      text-align: center;
+      font-size: 1.1rem;
+      margin: 0.5rem 0;
+      font-weight: 600;
+      color: #004d40;
+    }
+    footer {
+      background-color: #e0f2f1;
+      text-align: center;
+      padding: 0.8rem;
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      .about-content {
+        flex-direction: column;
+        text-align: center;
+      }
+      .about-content img {
+        width: 180px;
+        margin: 0 auto;
+      }
+      .therapy-images img {
+        width: 90%;
+      }
+      .offer {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mobilny Masaż</h1>
+    <p>Profesjonalny relaks w zaciszu Twojego domu</p>
+    <div class="slogan">ZDROWIE • SPRAWNOŚĆ • REGENERACJA</div>
+  </header>
+
+  <section class="about">
+    <h2>O mnie</h2>
+    <div class="about-content">
+      <img src="z.png" alt="Paweł Klusek – Technik masażysta">
+      <div class="text">
+        <p>
+          Nazywam się Paweł Klusek, jestem technikiem masażystą oraz pasjonatem sportu. Oferuję mobilne masaże wykonywane z pełnym zaangażowaniem i troską o Twoje zdrowie. Przyjeżdżam z profesjonalnym stołem i tworzę komfortowe warunki do relaksu i regeneracji w Twoim domu.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="offer">
+    <div class="offer-left">
+      <h2>Oferta</h2>
+      <p>Oferuję profesjonalny masaż w Twoim domu – bez pośpiechu, bez wychodzenia z mieszkania, z pełnym komfortem i relaksem.</p>
+      <ul>
+        <li><strong>Pojedyncza sesja masażu</strong> – 60 minut – <strong>150&nbsp;zł</strong></li>
+        <li><strong>Pakiet 5 spotkań</strong> – każde po 60 minut – <strong>650&nbsp;zł</strong><br><em>Oszczędzasz 100&nbsp;zł</em></li>
+        <li><strong>Pakiet 10 spotkań</strong> – każde po 60 minut – <strong>1000&nbsp;zł</strong><br><em>Oszczędzasz aż 500&nbsp;zł</em></li>
+      </ul>
+      <p>Działam na terenie <strong>Kielc i okolic w promieniu do 5 km</strong>. Dalszy dojazd możliwy po wcześniejszym uzgodnieniu – może wiązać się z dodatkową opłatą.</p>
+      <p>Pakiety są doskonałym wyborem dla osób, które chcą zadbać o regularny relaks i zdrowie. Terminy ustalamy indywidualnie.</p>
+    </div>
+    <div class="offer-right">
+      <p>Poleć mnie i zyskaj 30% na pojedynczą sesję lub wybrany pakiet spotkań.</p>
+      <ul>
+        <li>Pojedyncza sesja masażu – 60 minut: <s>150&nbsp;zł</s> → <b>105&nbsp;zł</b></li>
+        <li>Pakiet 5 spotkań – <s>650&nbsp;zł</s> → <b>455&nbsp;zł</b></li>
+        <li>Pakiet 10 spotkań – <s>1000&nbsp;zł</s> → <b>700&nbsp;zł</b></li>
+      </ul>
+    </div>
+    <iframe class="map-embed" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24433.383672498163!2d20.6173852!3d50.8660778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47182779a8e1b4a7%3A0xb064dfc0f28fcf2b!2sKielce!5e0!3m2!1spl!2spl!4v1719480000000!5m2!1spl!2spl" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <section class="how">
+    <h2>Masaż i terapia ruchem</h2>
+    <p style="text-align:center; max-width: 700px; margin: auto;">
+      Oferuję terapię kontuzji, leczenie przewlekłego napięcia mięśniowego oraz wspomaganie ruchem i prostymi ćwiczeniami, które pomagają wrócić do sprawności i zdrowia. Łączę masaż z podejściem funkcjonalnym.
+    </p>
+    <div class="therapy-images">
+      <img src="grafika1.png" alt="Ilustracja masażu">
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Kontakt</h2>
+    <p>📞 Telefon: <a href="tel:535273830">535-273-830</a></p>
+    <p>✉️ E-mail: <a href="mailto:ckmobilnymasaz@gmail.com">ckmobilnymasaz@gmail.com</a></p>
+  </section>
+
+  <footer>
+    © 2025 Paweł Klusek – Mobilny Masaż. Wszelkie prawa zastrzeżone.
+  </footer>
+</body>
+</html>
